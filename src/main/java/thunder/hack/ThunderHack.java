@@ -23,10 +23,10 @@ import java.lang.invoke.MethodHandles;
 public class ThunderHack implements ModInitializer {
     public static final ModMetadata MOD_META;
 
-    public static final String MOD_ID = "thunderhack";
-    public static final String VERSION = "1.7b2407";
+    public static final String MOD_ID = "nyan";
+    public static final String VERSION = "0.0.1";
     public static String GITHUB_HASH = "0";
-    public static String BUILD_DATE = "1 Jan 1970";
+    public static String BUILD_DATE = "idk";
 
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final Runtime RUNTIME = Runtime.getRuntime();

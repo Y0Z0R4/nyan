@@ -30,8 +30,8 @@ public final class RPC extends Module {
     private final Timer timer_delay = new Timer();
     private static Thread thread;
     String slov;
-    String[] rpc_perebor_en = {"Parkour", "Reporting cheaters", "Touching grass", "Asks how to bind", "Reporting bugs", "Watching Kilab"};
-    String[] rpc_perebor_ru = {"Паркурит", "Репортит читеров", "Трогает траву", "Спрашивает как забиндить", "Репортит баги", "Смотрит Флюгера"};
+    String[] rpc_perebor_en = {"Parkour", "Reporting cheaters because players is a pussy", "Touching grass OMG OMG ONG ONG", "Asks how to bind because the player is a faggot.", "Reporting bugs", "Watching Porn"};
+    String[] rpc_perebor_ru = {"Паркурит", "Сообщить о читерах, потому что игроки — слабаки", "Трогая траву ОМГ ОМГ ОНГ ОНГ", "Спрашивает, как сделать привязку, потому что игрок — педик.", "Репортит баги", "Смотрю порно"};
     int randomInt;
 
     public RPC() {
@@ -83,7 +83,7 @@ public final class RPC extends Module {
         if (!started) {
             started = true;
             DiscordEventHandlers handlers = new DiscordEventHandlers();
-            rpc.Discord_Initialize("1093053626198523935", handlers, true, "");
+            rpc.Discord_Initialize("1384675228419887246", handlers, true, "");
             presence.startTimestamp = (System.currentTimeMillis() / 1000L);
             presence.largeImageText = "v" + ThunderHack.VERSION + " [" + ThunderHack.GITHUB_HASH + "]";
             rpc.Discord_UpdatePresence(presence);
@@ -108,13 +108,13 @@ public final class RPC extends Module {
                         presence.smallImageKey = "";
                     }
 
-                    presence.button_label_1 = "Download";
-                    presence.button_url_1 = "https://github.com/Pan4ur/ThunderHack-Recode/";
+                    presence.button_label_1 = "Download Nyan!";
+                    presence.button_url_1 = "https://github.com/Y0Z0R4/nyan";
 
                     switch (mode.getValue()) {
-                        case Recode -> presence.largeImageKey = "https://i.imgur.com/yY0z2Uq.gif";
+                        case Recode -> presence.largeImageKey = "https://media1.tenor.com/m/2roX3uxz_68AAAAC/cat-space.gif";
                         case MegaCute ->
-                                presence.largeImageKey = "https://media1.tenor.com/images/6bcbfcc0be97d029613b54f97845bc59/tenor.gif?itemid=26823781";
+                                presence.largeImageKey = "https://media1.tenor.com/m/YrdhGJcq-gwAAAAd/snep-am-i-cooked.gif";
                         case Custom -> {
                             readFile();
                             presence.largeImageKey = String1.split("SEPARATOR")[0];
@@ -147,7 +147,7 @@ public final class RPC extends Module {
         } else if (mc.getCurrentServerEntry() != null) {
             result = isRu() ? (showIP.getValue() ? "Играет на " + mc.getCurrentServerEntry().address : "Играет на сервере") : (showIP.getValue() ? "Playing on " + mc.getCurrentServerEntry().address : "Playing on server");
         } else if (mc.isInSingleplayer()) {
-            result = isRu() ? "Читерит в одиночке" : "SinglePlayer hacker";
+            result = isRu() ? "Однопользовательский хакер (какой придурок)" : "SinglePlayer hacker (what an asshole)";
         }
         return result;
     }
